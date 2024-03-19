@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart Example</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="./Logo.png" alt="โลโก้ของคุณ" class="logo">
+        
+    </div>
+    
+    <div class="container">
+        
+        <div class="products">
+            <div class="product">
+                <img src="./1.png" alt="Noodle 1">
+                <div class="product-details">
+                    <h3> ข้าวกะเพราทะเล - 45฿</h3>
+                    <p>คำอธิบาย: ทะเล </p>
+                    <button class="add-to-cart" data-product-id="Krapao Talay" data-price="45"><span style="color: rgb(250, 250, 253);">เพิ่มลงในตะกร้า</span></button>
+                    <button class="remove-from-cart" data-product-id="1">นำออกจากตะกร้า</button>
+                </div>
+            </div>
+            <div class="product2">
+                <img class="img1" src="./2.png" alt="Noodle 2">
+                <div class="product-details">
+                    <h3>ข้าวกะเพราทะเลตับ - 45฿</h3>
+                    <p>คำอธิบาย: ทะเล ตับ</p>
+                    <button class="add-to-cart" data-product-id="Krapao Talay Tub" data-price="45"><span style="color: rgb(251, 251, 255);">เพิ่มลงในตะกร้า</span></button>
+                    <button class="remove-from-cart" data-product-id="2">นำออกจากตะกร้า</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./4.png" alt="Noodle 3">
+                <div class="product-details">
+                    <br><br>
+                    <br><br>
+                    <h3>ข้าวกะเพราปลาหมึก - 40฿</h3>
+                    <p>คำอธิบาย: ปลาหมึก</p>
+                    <button class="add-to-cart" data-product-id="Krapao squid" data-price="40"><span style="color: rgb(219, 219, 222);">เพิ่มลงในตะกร้า</span></button>
+                    <button class="remove-from-cart" data-product-id="5">นำออกจากตะกร้า</button>
+                </div>
+            </div>
+            <!-- เพิ่มสินค้าอื่นๆ ต่อจากนี้ -->
+            <div class="product">
+                <img src="./5.png" alt="Noodle 4">
+                <div class="product-details">
+                    <h3>ข้าวผัดฉ่าทะเล - 40฿</h3>
+                    <p>คำอธิบาย: ทะเล</p>
+                    <button class="add-to-cart" data-product-id="Cha Talay" data-price="40"><span style="color: rgb(217, 217, 221);">เพิ่มลงในตะกร้า</span></button>
+                    <button class="remove-from-cart" data-product-id="4">นำออกจากตะกร้า</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./6.png" alt="Noodle 5">
+                <div class="product-details">
+                    <h3>ข้าวผัดพริกแกงหมู ปลาหมึก - 40฿</h3>
+                    <p>คำอธิบาย: หมู ปลาหมึก</p>
+                    <button class="add-to-cart" data-product-id="Spicy Mhoo" data-price="40"><span style="color: rgb(219, 219, 222);">เพิ่มลงในตะกร้า</span></button>
+                    <button class="remove-from-cart" data-product-id="5">นำออกจากตะกร้า</button>
+                </div>
+            </div>
+            <!-- เพิ่มสินค้าอื่นๆ ต่อจากนี้ -->
+            <!-- สินค้าเพิ่มเติม -->
+            <div class="product">
+                <img src="./8.png" alt="Noodle 6">
+                <div class="product-details">
+                    <h3>ข้าวผัดน้ำพริก - 30฿</h3>
+                    <p>คำอธิบาย: ธรรรมดา พิเศษ</p>
+                    <button class="add-to-cart" data-product-id="Nampik Rice" data-price="30"><span style="color: rgb(216, 216, 219);">เพิ่มลงในตะกร้า</span></button>
+                    <button class="remove-from-cart" data-product-id="6">นำออกจากตะกร้า</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./7.png" alt="Noodle 7">
+                <div class="product-details">
+                    <h3>ข้าวกะเพราเนื้อตุ๋น - 50฿</h3>
+                    <p>คำอธิบาย: ธรรมดา พิเศษ</p>
+                    <button class="add-to-cart" data-product-id="Krapao meat" data-price="50"><span style="color: rgb(252, 252, 252);">เพิ่มลงในตะกร้า</span></button>
+                    <button class="remove-from-cart" data-product-id="7">นำออกจากตะกร้า</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./3.jpeg" alt="Noodle 8">
+                <div class="product-details">
+                    <h3>ข้าวกะเพราปลาหมึก ไข่ดาว - 50฿</h3>
+                    <p>คำอธิบาย: ธรรมดา พิเศษ</p>
+                    <button class="add-to-cart" data-product-id="Krapao squid Extra" data-price="50"><span style="color: rgb(244, 244, 245);">เพิ่มลงในตะกร้า</span></button>
+                    <button class="remove-from-cart" data-product-id="8">นำออกจากตะกร้า</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./9.jpeg" alt="Noodle 9">
+                <div class="product-details">
+                    <h3>ข้าวหมูกระเทียม - 40฿</h3>
+                    <p>คำอธิบาย: พิเศษ ธรรมดา</p>
+                    <button class="add-to-cart" data-product-id="Pork Rice" data-price="40"><span style="color: rgb(247, 247, 250);">เพิ่มลงในตะกร้า</span></button>
+                    <button class="remove-from-cart" data-product-id="9">นำออกจากตะกร้า</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./10.png" alt="Noodle 10">
+                <div class="product-details">
+                    <h3>ข้าวผัดพริกสด  - 40฿</h3>
+                    <p>คำอธิบาย: ธรรมดา พิเศษ</p>
+                    <button class="add-to-cart" data-product-id="Pad Spicy" data-price="40"><span style="color: rgb(248, 248, 250);">เพิ่มลงในตะกร้า</span></button>
+                    <button class="remove-from-cart" data-product-id="10">นำออกจากตะกร้า</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="cart" class="cart">
+            <h2>Cart</h2>
+            <div id="cart-items">
+                <p>No! cart-items</p>
+            </div>
+            <p id="total-price">Total: ฿0</p>
+            
+        </div>
+
+        <button onclick="printPDF()">Print Receipt</button>
+
+    </div>
+    
+
+    <!-- Load pdf-lib from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+
+    <!-- Your JavaScript code -->
+    <script src="cart.js"></script>
+    <script src="pdf-lib.js"></script>
+    
+</body>
+</html>
